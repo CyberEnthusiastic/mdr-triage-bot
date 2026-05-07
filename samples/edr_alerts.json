@@ -1,0 +1,68 @@
+{
+  "alerts": [
+    {
+      "detection_id": "ldt:cs-001",
+      "max_severity": 80,
+      "created_timestamp": "2025-04-18T14:22:01Z",
+      "device": {"hostname": "WIN-FIN-014"},
+      "behaviors": [
+        {
+          "tactic": "Command and Control",
+          "technique": "T1071.001",
+          "filename": "powershell.exe",
+          "user_name": "fin\\jdoe",
+          "md5": "44d88612fea8a8f36de82e1278abb02f44d88612fea8a8f36de82e1278abb02f",
+          "sha256": "44d88612fea8a8f36de82e1278abb02f44d88612fea8a8f36de82e1278abb02f",
+          "ioc_value": "45.155.205.233"
+        }
+      ]
+    },
+    {
+      "threatInfo": {
+        "threatId": "s1-77a",
+        "createdAt": "2025-04-18T13:55:10Z",
+        "confidenceLevel": "High",
+        "processName": "wscript.exe",
+        "filePath": "C:\\Users\\public\\update.js",
+        "sha256": "0123abcdef0123abcdef0123abcdef0123abcdef0123abcdef0123abcdef0123",
+        "originatorProcess": "outlook.exe",
+        "mitigationStatus": "T1059.007"
+      },
+      "agentRealtimeInfo": {"computerName": "MAC-LAPTOP-09"}
+    },
+    {
+      "AlertId": "mdef-9941",
+      "Severity": "Medium",
+      "AlertCreationTime": "2025-04-18T11:02:44Z",
+      "DeviceName": "WIN-DEV-22",
+      "RelatedUser": "dev\\asmith",
+      "Title": "Suspicious DNS lookup",
+      "Categories": "InitialAccess",
+      "MitreTechniques": "T1071.004",
+      "Evidence": [
+        {"value": "evil-update.click"},
+        {"value": "185.220.101.42"}
+      ]
+    },
+    {
+      "AlertId": "mdef-9942",
+      "Severity": "Low",
+      "AlertCreationTime": "2025-04-18T09:30:00Z",
+      "DeviceName": "WIN-DEV-22",
+      "RelatedUser": "dev\\asmith",
+      "Title": "Network connection to Tor exit",
+      "Categories": "CommandAndControl",
+      "MitreTechniques": "T1090.003",
+      "Evidence": [{"value": "185.220.101.42"}]
+    },
+    {
+      "alert_id": "noise-1",
+      "vendor": "unknown",
+      "severity": "low",
+      "host": "WIN-DEV-99",
+      "user": "dev\\bot",
+      "process": "chrome.exe",
+      "iocs": ["8.8.8.8", "github.com"]
+    }
+  ]
+}

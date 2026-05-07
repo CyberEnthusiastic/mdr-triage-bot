@@ -1,0 +1,53 @@
+{
+  "ipv4": {
+    "45.155.205.233": {
+      "score": 95,
+      "tags": ["c2", "cobalt-strike", "ransomware"],
+      "first_seen": "2024-09-12",
+      "last_seen": "2024-12-01",
+      "description": "Known Cobalt Strike C2 server, observed in Conti / BlackCat campaigns."
+    },
+    "185.220.101.42": {
+      "score": 75,
+      "tags": ["tor-exit"],
+      "description": "Tor exit relay — high noise, tactical block on sensitive segments."
+    },
+    "8.8.8.8": {
+      "score": 0,
+      "tags": ["benign", "google-dns"],
+      "description": "Google public DNS resolver — benign."
+    }
+  },
+  "domain": {
+    "evil-update.click": {
+      "score": 92,
+      "tags": ["malware-distribution", "fakeupdate"],
+      "description": "Malicious fake-update lure delivering AsyncRAT / Lumma."
+    },
+    "github.com": {
+      "score": 0,
+      "tags": ["benign"],
+      "description": "Legitimate code hosting."
+    }
+  },
+  "sha256": {
+    "44d88612fea8a8f36de82e1278abb02f44d88612fea8a8f36de82e1278abb02f": {
+      "score": 98,
+      "tags": ["malware", "loader", "smokeloader"],
+      "first_seen": "2024-08-04",
+      "description": "SmokeLoader downloader, observed dropping Stealc."
+    },
+    "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855": {
+      "score": 0,
+      "tags": ["benign", "empty-file"],
+      "description": "SHA256 of an empty file — false-positive in many EDRs."
+    }
+  },
+  "md5": {
+    "5d41402abc4b2a76b9719d911017c592": {
+      "score": 0,
+      "tags": ["benign", "test"],
+      "description": "MD5 of 'hello' — used in tests."
+    }
+  }
+}
